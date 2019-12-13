@@ -13,18 +13,30 @@ header .bg-light {
 b {
     font-weight: bolder;
 }
-
 header nav a {
     color: white !important;
+}
+header nav li a {
     border-bottom: 2px solid #76c7c0;
 }
 
-header nav a:hover {
+header nav li a:hover {
     background-color: #5e9f9a;
     border-radius: .5em;
     border-bottom: 2px solid #528b86;
 }
-
+header .dropdown-item {
+    position: relative;
+}
+header .dropdown-item::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1em;
+    width: 1em;
+    background-image: url(images/arrow-r.svg);
+    left: 5px;
+}
 header .dropdown-toggle:hover {
     background-color: #e5655d;
     border-radius: .5em;
